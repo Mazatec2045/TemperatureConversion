@@ -1,21 +1,48 @@
+// Omar Vergara
+// 02/18/2024
+// Skill Assignment 2
+
+
 #include <iostream>
 #include <iomanip>
-using namespace std;
+#include <cmath>
+
+
+using namespace std; 
 
 int main() {
-    double celsius, fahrenheit;
 
-    // Convert Celsius to Fahrenheit
-    cout << "Enter temperature in Celsius: ";
+    // Variables
+    double celsius; 
+    double fahrenheit;
+
+    // Temp in C
+    cout << "Enter a temperature in Celsius : ";
     cin >> celsius;
-    fahrenheit = (celsius * 9.0) / 5.0 + 32;
-    cout << "Temperature in Fahrenheit: " << fixed << showpoint << setprecision(2) << fahrenheit << endl;
+    cout << endl; 
+    
+    // C to F formula
+    fahrenheit = (celsius * 9.0 / 5.0) + 32;
 
-    // Convert Fahrenheit to Celsius
-    cout << "Enter temperature in Fahrenheit: ";
+    // Temp Conversion
+    cout << showpoint << setprecision(2) << fixed;
+    cout << "Enter a temperature in Fahrenheit is: " << fahrenheit << endl;
+    cout << endl; 
+
+    // Temp in F
+    cout << "Enter a temperature in Fahrenheit: ";
     cin >> fahrenheit;
+    cout << endl; 
+
+    // F to C formula
     celsius = (fahrenheit - 32) * 5.0 / 9.0;
-    cout << "Temperature in Celsius: " << fixed << showpoint << setprecision(2) << celsius << endl;
+
+    // Temp Conversion 
+    cout << showpoint << setprecision(2) << fixed;
+    cout << "Enter a temperature in Celsius is: " << celsius << endl;
+    cout << endl; 
+
 
     return 0;
+
 }
